@@ -571,6 +571,18 @@ class Guild(Hashable):
         r = [ch for ch in self._channels.values() if isinstance(ch, CategoryChannel)]
         r.sort(key=lambda c: (c.position, c.id))
         return r
+    
+    @property
+    def bots(self) -> List[Member]:
+        """List[:class: `Member`]: A list of members that are bots."""
+
+        return [m for m in self.members if m.bot]
+    
+    @property
+    def humans(self) -> List[Member]:
+        """List[:class: `Member`]: A list of members that are not bots."""
+
+        return [m for m in self.members if not m.bot]
 
     def by_category(self) -> List[ByCategoryItem]:
         """Returns every :class:`CategoryChannel` and their associated channels.
