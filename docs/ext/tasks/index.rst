@@ -22,7 +22,7 @@ A simple background task in a :class:`~discord.ext.commands.Cog`:
 
     from discord.ext import tasks, commands
 
-    class MyCog(commands.Cog):
+    class MyDiscordCog(commands.Cog):
         def __init__(self):
             self.index = 0
             self.printer.start()
