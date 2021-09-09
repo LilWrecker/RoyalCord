@@ -3,3 +3,4 @@
 
 ### Can i upgrade/move to this module**
 - This module is still being developed, You can help us out tho. @ <https://github.com/Mythical-Studio/discord.py>
+- Also join the offcial server! https://discord.gg/Vg4QGyvpxw
